@@ -1,0 +1,11 @@
+<div class="Results">
+    <!-- Implement result list here -->
+    Results 
+    <div class="card-columns">
+        <div *ngFor="let gif of message; index as i">
+            <div class="card" style="border: none;">
+                <a href="gif.url" class="gif" target="_blank"><img class="gif" src="{{gif.images.preview_webp.url}}" alt="" width="50%"></a>
+            </div>
+        </div>
+    </div>
+</div>
